@@ -46,7 +46,7 @@ int main()
 	CloseHandle(handleB);
 
 	return 0;
-}*/
+}
 
 #include <process.h>
 #include <iostream>
@@ -92,4 +92,24 @@ int main()
 	CloseHandle(handleB);
 
 	return 0;
+}*/
+
+#pragma once
+#include "Frame.h"
+
+void main() {
+
+	try
+	{
+		Frame *f1 = new Frame;
+		Frame *f2 = new Frame[10];
+
+		delete f1;
+		delete[] f2;
+	}
+
+	catch (string msg)
+	{
+		cout << "Error msg :" << msg << endl;
+	}
 }
