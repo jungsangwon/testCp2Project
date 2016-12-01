@@ -306,7 +306,9 @@ void main()
 			cout << word.getWord() << ", ";
 			iter_list++;
 		}
+
 		cout << "\n===" << endl;
 		iter++;
+
 	}
 }
